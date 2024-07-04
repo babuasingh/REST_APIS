@@ -1,0 +1,69 @@
+### throwing an error
+GET http://localhost:3000/produc
+
+
+### getting list of all products
+GET http://localhost:3000/products
+
+
+### created a product
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name":"Samsung S1234",
+    "price" : 202002
+}
+
+### Get a product by ID
+
+GET  http://localhost:3000/products/652d5fcd29e19e1fcd4a7d53
+
+
+### Patch(Update) a product by ID
+
+PATCH  http://localhost:3000/products/652d5fcd29e19e1fcd4a7d53
+Content-Type: application/json
+
+{
+    "name":"OppO A55",
+    "price":15000
+}
+
+
+### delete a product by ID
+DELETE  http://localhost:3000/products/652e1b9cb00e6e0103ef3b95
+
+
+
+### getting the home respose
+GET http://localhost:3000/
+
+
+### passing the query String
+GET http://localhost:3000/test?name=iMac&price=4000&affordable=true
+
+
+
+### passing the route parameters
+GET http://localhost:3000/test/siddharth/21/developer
+
+
+
+
+### passing the request body in json form 
+POST http://localhost:3000/test
+Content-Type: application/json 
+
+{
+    "name":"Siddharth Singh",
+    "age":"twenty one"
+}
+
+
+
+### passing the request body in url encoded form
+POST http://localhost:3000/test
+Content-Type: application/x-www-form-urlencoded
+
+name=Singh Siddharth&Age= 21
